@@ -1,0 +1,7 @@
+{
+  "name": "formvalidation",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

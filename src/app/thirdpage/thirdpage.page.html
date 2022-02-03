@@ -1,0 +1,14 @@
+<div class="Title">
+  <h2 id="torus">WELCOME TO TORUS</h2>
+  <a id="log-out" href="#">Log Out</a>
+</div>
+
+
+<ion-content>
+  <div class="contains">
+   <ul *ngFor="let item of showapiname()">
+     <li (click)="ShowDataToUser(item.Name)">{{item.Name}}</li><br/>
+   </ul>
+      </div>
+
+</ion-content>

@@ -1,0 +1,23 @@
+.data{
+    position:relative;
+    font-size: 20px;
+    font-family:cursive;
+    border: 1px solid black;
+    color: white;
+}
+
+#title{
+    background-color: black;
+    color: white;
+}
+
+.container{
+    background-image: url(https://images.pexels.com/photos/574069/pexels-photo-574069.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#movie-details{
+    color: white;
+}

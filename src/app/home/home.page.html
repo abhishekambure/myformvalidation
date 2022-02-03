@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Registration form</ion-title>
+    </ion-toolbar>
+    
+  </ion-header>
+ 
+
+  <div id="container">
+   <form [formGroup]="profileForm" (ngSubmit)="WelComeTorus()" class="Login-Form">
+    <ion-icon name="logo-usd" style="font-size: 200px;"></ion-icon>
+      
+     <div class="Usernotexists">{{NotVisited}}</div>
+     
+     <input type="text" class="form-control" placeholder="Enter your username" class="inp" formControlName="username">
+     <small class="Errormsg" *ngIf="f.username.invalid && f.username && Submitted"> Required</small>
+     
+     
+    
+     <input type="password"  class ="form-control"placeholder="Enter your password " class="inp" formControlName="password">
+     <small class="Errormsg" *ngIf="f.password.invalid && f.password && Submitted"> Required</small>
+     
+     <button id="login">Login</button>
+     <span>
+     <span (click)="btnClick();" id="signup">Not a user? Sign up</span>
+    </span>
+
+   </form>
+  </div>
+</ion-content>

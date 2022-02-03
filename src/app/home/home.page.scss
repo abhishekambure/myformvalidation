@@ -1,0 +1,65 @@
+#container {
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYM82mF7lPXBgd4jMwI9D-nc_XLGLHWsCXLw&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Login-Form{
+  display:  flex;
+  background-color: rgba(173, 216, 230, 0.604);
+  flex-direction: column;
+  height: 30rem;
+  width: 22rem;
+  justify-content: space-evenly;
+  align-items: center;
+  border:  1px solid  black;
+  border-radius: 10px
+ 
+}
+
+
+
+#login{
+
+  border-radius: 5px;
+  border: none;
+  padding: 0.8rem 2rem;
+  background-color: rgb(3, 84, 3);
+  color: white;  
+}
+
+#login:hover{
+
+  border-radius: 5px;
+  border: none;
+  padding: 0.8rem 2rem;
+  background-color: rgb(12, 252, 12);
+  color: black;  
+}
+
+.btn{
+  position: relative;
+  top: 70px;
+}
+
+.inp{
+  border: 1px solid black;
+  height: 2rem;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 16px;
+  margin-top: 10px;
+}
+.Errormsg{
+  color:  red;
+}
+
+#signup{
+  cursor: pointer;
+  color: blue;
+}

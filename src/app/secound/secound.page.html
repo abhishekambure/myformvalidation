@@ -1,0 +1,55 @@
+<ion-header>
+  <meta charset="UTF-8">
+</ion-header>
+
+<ion-content>
+  <div  class="container">
+  
+  <div class="background">
+    <ion-icon id="secound-icon" name="beer-outline" style="font-size: 200px; width: 100px; height: 100px;"></ion-icon>
+    <form id="form-validation" [formGroup]="Validation" (ngSubmit)="userdata()">
+      
+      <div class="input_fields">
+        <div>
+        <input type="text" placeholder="Firstname" formControlName="firstname" class="input" required />
+        <small class="small" *ngIf="f.firstname.invalid &&(f.firstname.touched || userSubmitted)">required</small>
+          </div>
+
+      <div>
+        <input type="text" placeholder="LastName" formControlName="lastname" class="input" required />
+        <small  class="small" *ngIf="f.lastname.invalid &&(f.lastname.touched || f.userSubmitted)">required</small>
+      </div>
+      </div>
+
+      <div  class="input_fields" >
+        <div>
+        <input type="text" placeholder="Username" formControlName="username" class="username" required />
+        <small  class="small" *ngIf="f.username.invalid && (f.username.touched || f.userSubmitted)">required</small>
+      </div>
+      </div>
+
+      <div class="input_fields">
+       <div>
+        <input type="password" placeholder="Enter password" formControlName="password" class="input" required />
+        <span  class="small" *ngIf="f.password.invalid && (f.password.touched || userSubmitted)">required</span>
+      </div>
+
+      <div>
+        <input type="password" placeholder="Confirm Password" formControlName="confirmpassword" class="input"
+          required />
+        <span  class="small" *ngIf="f.confirmpassword.invalid && (f.confirmpassword.touched || userSubmitted)">required</span>
+      </div>
+
+      </div>
+      <div>
+      <button id="Signup" (click)="goBack()">Sign Up</button>
+      <button id="cancel" (click)="goBack()">Cancel</button>
+    </div>
+
+    </form>
+  <a id="already-logged" href="#" > Already Logged In? </a>
+
+  </div>
+
+</div>
+</ion-content>

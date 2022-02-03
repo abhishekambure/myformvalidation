@@ -1,0 +1,114 @@
+.container{
+  background-image: url(https://media.istockphoto.com/photos/colorful-background-picture-id1280385511?b=1&k=20&m=1280385511&s=170667a&w=0&h=4-KMkIqgyw2gTBMTBbYZVZoidwRsWZzr3q0xyUDYhas=);
+  // text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  // position: absolute;
+  // left: 0;
+  // right: 0;
+  // top:50% ;
+  // transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.input{
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 2rem;
+  text-align: center;
+  margin-right: 16px;
+  margin-top: 50px;
+}
+
+
+.username{
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 2rem;
+  text-align: center;
+  position: relative;
+  top: 25px;
+  margin-right: 16px;
+  width: 420px;
+}
+
+#Signup{
+  position: relative;
+  top: 25px;
+  border-radius: 5px;
+  border: none;
+  right: 30px;
+  padding: 10px;
+  background-color: green;
+  color: white;  
+}
+#Signup:hover{
+  position: relative;
+  top: 25px;
+  border-radius: 5px;
+  border: none;
+  right: 30px;
+  padding: 10px;
+  background-color: rgb(11, 233, 11);
+  color: black;  
+}
+
+.small{
+  position: relative;
+  color: red;
+  font-size: 12px;
+}
+
+#cancel{
+
+  position: relative;
+  top: 25px;
+  border-radius: 5px;
+  border: none;
+  left: 5px;
+  padding: 10px;
+  background-color: red;
+  color: white;  
+}
+
+#cancel:hover{
+  position: relative;
+  top: 25px;
+  border-radius: 5px;
+  border: none;
+  left: 5px;
+  padding: 10px;
+  background-color: rgb(121, 4, 4);
+  color: white;  
+}
+
+.background{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+height: 30rem;
+width: 30rem;
+background-color:rgba(130, 234, 238, 0.398);
+text-align: center;
+border-radius: 10px;
+   
+}
+
+.input_fields{
+  display: flex;
+}
+
+#already-logged{
+  position: relative;
+  top: 30px;
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+}
